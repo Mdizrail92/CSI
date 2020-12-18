@@ -126,16 +126,23 @@ header h3
     transform: translate(-50%,-50%);
 }
 
-
+.sakec-logo
+{
+	height: 35px;
+	filter: brightness(0);
+	filter: invert(0.6);
+}
 
 .rolling
 {
-	height: 100px;
+	height: 170px;
 	width: auto;
-	margin-bottom: 22px;
-	animation: rolling 3.5s infinite ease-in-out; 
-}
-.roll-support1
+	margin-bottom: 15px;
+	filter: brightness(0);
+	filter: invert(1);
+	/* animation: rolling 3.5s infinite ease-in-out;  */
+ }
+/* .roll-support1
 {
 	height: 30px;
 	margin-bottom: 80px;
@@ -146,7 +153,7 @@ header h3
 @keyframes rolling{
 	from{transform: rotate(0deg);}
 	to{ transform: rotate(360deg);}
-}
+}  */
 header h1
 {
 	color: white;
