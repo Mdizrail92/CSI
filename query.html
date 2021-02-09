@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 
-    <link rel="stylesheet" href="css/admin.css">
-    <title>Database</title>
+    <link rel="stylesheet" href="css/query.css">
+    <title>Query</title>
 </head>
 
 <body>
 
     <header>
 
-        <h2 style="text-align: center;">Database</h2>
+        <h2 style="text-align: center;">Queries</h2>
     </header>
     <div class="spacer" style="height:10px;"></div>
    
@@ -63,10 +63,36 @@
                     <td><button type="button" class="btn btn-danger">Delete</button></td>
                     
                 </tr>
+                <tr>
+
+                    <td scope="row">Aditya Shah</td>
+
+                    <td>aditya.shah_19@sakec.ac.in</td>
+                    <td>
+                        <div id="summary">
+                            <p class="collapse" id="collapse1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor maximus laoreet.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. In hac habitasse platea dictumst. Suspendisse venenatis sollicitudin erat in
+                                gravida. Sed eget nisl tristique, commodo lectus sit amet, vulputate sem. Cras por. </p>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse1
+                            " aria-expanded="false"
+                                aria-controls="collapseSummary"></a>
+                        </div>
+                    </td>
+                  
+                    <td><button id="foo" type="button"  onClick="addTextArea();" class="btn btn-primary">Reply</button>
+                        <div id="reply"></div>
+                        <div style="height: 10px;" id="send"></div></td>
+                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    
+                </tr>
+                
 
             </div>
         </tbody>
       
+        
     
     </table>
     <div class="spacer" style="height:10px;"></div>
@@ -76,7 +102,7 @@
         <div class="spacer" style="height:2px;"></div>
         <a href="index.html"><i class="fas fa-home"></i></a>
         <div class="spacer" style="height:0px;"></div>
-        <h5>Copyright &copy; CSI-SAKEC 2020-21 All Rights Reserved</h5>
+        <h5>CSI-SAKEC 2021 &copy; All Rights Reserved</h5>
         <div class="spacer" style="height:1px;"></div>
     </div>
 <script type="text/javascript">
@@ -84,7 +110,7 @@
             var div = document.getElementById('reply');
             div.innerHTML += "<textarea  rows='5' cols='20' name='new_quote[]' />";
             var div1 = document.getElementById('send');
-            div1.innerHTML += "<button >Send</button>";
+            div1.innerHTML += `<button class="btn btn-primary">Send</button>`;
             el=document.getElementById("foo");
            el.remove();
    }
